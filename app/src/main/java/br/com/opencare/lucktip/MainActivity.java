@@ -305,7 +305,6 @@ public class MainActivity extends AppCompatActivity {
             super(fm);
         }
 
-
         @Override
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
