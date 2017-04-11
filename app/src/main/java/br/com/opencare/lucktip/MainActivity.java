@@ -107,8 +107,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(final View view) {
 
                 View rootView = mViewPager.getFocusedChild();
-
-
+                //roney
                 EditText  ed_bettors = (EditText) rootView.findViewById(R.id.edBettors);
                 EditText ed_value = (EditText) rootView.findViewById(R.id.edValue);
                 TextView result = (TextView) rootView.findViewById(R.id.result);
