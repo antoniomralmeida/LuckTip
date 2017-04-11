@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LuckTip</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="_1">1</string>
+    <string name="_4">4</string>
+    <string name="apostadores">Apostadores</string>
+    <string name="valor_aposta">Valor aposta</string>
+</resources>
