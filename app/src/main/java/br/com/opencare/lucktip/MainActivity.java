@@ -128,8 +128,6 @@ public class MainActivity extends AppCompatActivity {
 
                 MyTask task = new MyTask(value, bettors, progress, result);
                 task.execute();
-
-
                }
         });
 
