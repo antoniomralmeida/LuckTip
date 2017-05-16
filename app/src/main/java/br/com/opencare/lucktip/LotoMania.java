@@ -128,12 +128,12 @@ public class LotoMania extends Caixa {
 
     private TreeMap<Integer, Integer> Hist(int games) {
 
-        int numbers = games <= 0 ? history.size() : Math.min(games * 6, history.size());
+        int start = games <= 0 ? 0 : Math.max(history.size() - games * 20, 0);
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < 100; i++)
             map.put(i, 0);
 
-        for (int i = 0; i < numbers; i++)
+        for (int i = start; i < history.size(); i++)
             map.put(history.get(i), map.get(history.get(i)) + 1);
 
         ValueComparator bvc = new ValueComparator(map);
@@ -150,7 +150,7 @@ public class LotoMania extends Caixa {
 
             System.out.print("Learning...");
 
-            hist = Hist(0);
+            hist = Hist(history.size()*90/100);
 
             System.out.println(hist);
 

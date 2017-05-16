@@ -20,10 +20,10 @@ public class Jogo {
         for (int i=0;i<100;i++) {
             if (dezena.contains(i)) {
                 r = r + sep + df.format(i);
-                sep = ",";
+                sep = " ";
             }
         }
-        return r + "\n";
+        return r + "\n--------------------------\n";
     }
 
     public boolean contains(Jogo j) {
