@@ -139,7 +139,7 @@ public class Quina extends Caixa {
             map.put(i, 0);
 
         for (int i = start; i < history.size(); i++)
-            map.put(history.get(i), map.get(history.get(i)) + 1);
+            map.put(history.get(i), map.get(history.get(i)) + i);
 
         ValueComparator bvc = new ValueComparator(map);
         TreeMap<Integer, Integer> hs = new TreeMap<Integer, Integer>(bvc);
@@ -153,7 +153,7 @@ public class Quina extends Caixa {
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
         System.out.print("Learning...");
         try {
-            hist = Hist(history.size()*90/100);
+            hist = Hist(history.size());
 
             double[][] _data = new double[apostas.length][1];
             for (int i = 0; i < hist.size(); i++) {
